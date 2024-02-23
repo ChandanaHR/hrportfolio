@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+html,body {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    width: 970px;
+    margin: 0px auto;
+    display: table;
+}
+
+.head {
+    width: 33%;
+    float: left;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.part1 {
+    color: rgb(105, 208, 242);
+}
+
+.part {
+    color:rgb(105, 208, 242);
+    font-size: 30px;
+}
+
+.part2 {
+    font-size: 50px;
+    color:rgb(105, 208, 242);
+}
+
+.section {
+    width: 66%;
+    float: left;
+}
+
+.main {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+    height: 100vh;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 20px;
+    color: white;
+}
+
+.mainpart {
+    float: left;
+    width: 50%;
+}
+
+.bodypart {
+    width: 100%;
+    float: left;
+    margin-top: 20vh;
+    height: 400px;
+}
+
+.wrapper {
+    margin-top: 40px;
+}
+
+.rotate span {
+    font-size: 2rem;
+    display: inline-flex;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    0%,
+    75% {
+        transform: rotateY(360deg);
+    }
+}
+
+.wrapper span:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.wrapper span:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+.wrapper span:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.wrapper span:nth-of-type(3) {
+    animation-delay: 0.8s;
+}
+
+.wrapper span:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.bodypart h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.bodypart h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.bodypart a {
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.resume {
+    margin-top: 70px;
+    padding: 13px 25px;
+    font-size: 20px;
+    margin-right: 500px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(18, 18, 71);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(71, 60, 60);
+}
+
+.resume:hover {
+    background-color: #1498ef;
+}
+
+.resume:active{
+    background-color: darkblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.mainpart img {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 60%;
+    border: 30px solid white;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes change {
+    0%   {border: 30px solid rgb(151, 151, 203);}
+    25%  {border: 30px solid rgb(88, 88, 236);}
+    50%  {border: 30px solid rgb(52, 52, 107)}
+    100% {border: 30px solid rgb(9, 9, 97);}
+}
+
+.aboutme {
+    width: 100%;
+    float: left;
+    padding: 110px 0px 110px 0px;
+    background-color: rgb(78, 69, 69);
+}
+
+.aboutme .container .mainpart .who {
+    -webkit-animation: colorchange 20s infinite alternate;
+}
+
+.tab {
+    margin-top: 20px;
+}
+
+.heading {
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 40px;
+    color: rgb(108, 108, 231);
+    margin-left: 25%;
+}
+
+.about {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.about h3 {
+    margin-left: 30px;
+}
+
+.about p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+table th
+table td {
+    font-size: 16px;
+    text-align: left;
+    padding: 5px 0px;
+}
+
+.aboutme .container .mainpart h1 {
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.skillsection .container h2 {
+    margin-top: 30px;
+}
+
+.skill {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.skill span {
+    float: right;
+}
+
+.skill div {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    background-color: rgb(253, 253, 246);
+    border-radius: 30px;
+}
+
+.skill div span {
+    background: rgb(47, 54, 255);
+    height: 10px;
+    float: left;
+}
+
+div[role="progressbar"] {
+    color: white;
+    --size: 12rem;
+	margin-left: 100px;
+	margin-bottom: 20px;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	place-items: center;
+	display: grid;
+    animation: growProgressBar 3s ease-out forwards;
+    animation-iteration-count: 10;
+	--pgPercentage: var(--value);
+	background: radial-gradient(closest-side, rgb(12, 8, 8) 80%, transparent 0 99.9%, rgb(51, 39, 39) 0),
+		conic-gradient(blue calc(var(--pgPercentage) * 1%), white 0);
+}
+
+@keyframes growProgressBar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.projects {
+    margin-top: 100px;
+    background-color: rgb(20, 20, 21);
+    padding-bottom: 50px;
+}
+
+.projects .container h2 {
+    margin-top: 30px;
+    color: rgb(108, 108, 231);
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.projectlist {
+    padding: 50px;
+    margin-left: 25px;
+    margin-top: 35px;
+    background-color: rgb(36, 35, 35);
+    border-radius: 20px;
+    width: 90%;
+    float: left;
+}
+
+.projectlist:hover{
+    background-color: darkblue;
+}
+
+.projectlist i {
+    font-size: 40px;
+    color: rgb(148, 215, 238);
+    float: left;
+    width: 70px;
+}
+
+.projectlist h3{
+    font-size: 25px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.projectlist p {
+    font-size: 15px;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+      color: blue;
+    }
+    10% {
+      color: #8e44ad;
+    }
+    20% {
+      color: rgb(12, 12, 88);
+    }
+    30% {
+      color: rgb(163, 163, 243);
+    }
+    40% {
+      color: rgb(17, 17, 66);
+    }
+    50% {
+      color: #34495e;
+    }
+    60% {
+      color: rgb(139, 139, 245);
+    }
+    70% {
+      color: #1498ef;
+    }
+    80% {
+      color: lightskyblue;
+    }
+    90% {
+      color: #0d293b;
+    }
+    100% {
+      color: darkblue;
+    }
+}
+
+.codingprofiles{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.codingprofiles .container h2 {
+    margin-top: 30px;
+    color: rgb(108, 108, 231);
+    text-align: center;
+    font-size: 40px;
+}
+
+.coding {
+    width:100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.codingprofiles .container {
+    width: 95%;
+}
+
+.coding {
+    width: 100%;
+    padding-left: 250px;
+    height: 150px;
+    background-color: rgb(57, 57, 56);
+    border-radius: 30px;
+}
+
+.images img{
+    width: 100px;
+    border-radius: 60px;
+    margin-left: 20px;
+}
+
+.coding .images{
+    margin-top: 30px;
+    float:left;
+    margin-left: 50px;
+}
+
+.Interests {
+    background-color: black;
+}
+
+.Interests .container {
+    width: 90%;
+    background-color: rgb(49, 54, 55);
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
+.Interests .container h2 {
+    margin-top: 30px;
+    color: rgb(108, 108, 231);
+    text-align: center;
+    font-size: 40px;
+}
+
+.areasofinterests {
+    margin-left: 150px;
+}
+
+.areas {
+    margin-left: 80px;
+    margin-top: 20px;
+    float: left;
+}
+
+.circles {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.areas .circles img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.circles p{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.hire {
+    padding-left: 590px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.neon {
+    margin: 1rem auto;
+    animation: neon1 1s ease infinite;
+}
+
+@keyframes neon1 {
+    0%,
+    100% {
+        text-shadow: 0 0 10px blue, 0 0 20px rgb(165, 165, 236), 0 0 20px rgb(9, 132, 181), 0 0 20px darkblue, 0 0 2px rgb(47, 47, 100), 2px 2px 2px rgb(149, 149, 235);
+        color: whitesmoke;
+    }
+    50% {
+        text-shadow: 0 0 2px rgba(109, 109, 242, 0.136), 0 0 5px darkblue, 0 0 5px rgb(8, 165, 227), 0 0 5px rgb(207, 207, 245), 0 0 2px rgb(5, 5, 98), 4px 4px 2px rgb(29, 29, 87);
+        color: black;
+    }
+}
+
+.addresssection {
+    width: 100%;
+    float: left;
+    padding: 110px 0px 110px 0px;
+    margin-top: 50px;
+    background-color: rgb(17, 20, 20);
+}
+
+.addresssection .container {
+    margin-left: 220px;
+    background-color: rgb(44, 41, 44);
+    border-radius: 50px;
+}
+
+.addresssection .container h2 {
+    margin-top: 30px;
+    color: rgb(108, 108, 231);
+    text-align: center;
+    font-size: 40px;
+}
+
+.addresssection form {
+    margin-top: 40px;
+    width: 66%;
+    margin: 0px auto;
+}
+
+.addresssection .container .contact {
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+}
+
+.addresssection input, textarea {
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.addresssection textarea {
+    height: 80px;
+}
+
+.addresssection .contact button {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px;
+    background: rgb(174, 174, 245);
+    color: black;
+    font-size: 16px;
+    border: 1px solid white;
+}
+
+.addresssection .details {
+    width: 25%;
+    float: left;
+    margin-top: 60px;
+    margin-left: 60px;
+    height: 120px;
+}
+
+.details h3 {
+    font-size: 40px;
+    text-align: center;
+    color: skyblue;
+}
+
+.details h4 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.details p {
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer .container{
+    height: 80px;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 20px;
+    float: left;
+    padding-left: 220px;
+}
